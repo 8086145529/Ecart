@@ -40,7 +40,6 @@ function Cartitem({ item}) {
                          <IoMdRemove/>
                          </div>
                           {/* amount */}
-                          {/* h-full flex justify-center items-center */}
                           <div className='px-2'>
                             {amount}
                           </div>

@@ -104,14 +104,6 @@ useEffect(()=>{
 
 
 
-
-
-
-
-
-
- 
-
   return (
     <CartContext.Provider value={{cart,setCart,addToCart,removeFromCart,emptyCart,increaseAmount,decreaseAmount,totalNum,totalPrice}}>
     {children}

@@ -27,25 +27,13 @@ function Header() {
     })
   })
 
-  
-
-
-
-   
-  
-
-
-   
 
   return (
     <>
     {isProductPage?(
       // Header of product page
            <header className='bg-gray-900  shadow-md text-gray-50 opacity-95 mx-auto flex flex-wrap w-full items-center justify-between fixed z-20 transition-all '>
-           {/* cart icon */}
-           {/* <div className='text-xl' onClick={()=>setIsOpen(!isOpen)}>
-           <IoBagHandleOutline />
-           </div> */}
+
             {/* Logo */}
            <Link to={'/'} className="flex title-font font-medium items-center mb-4 md:mb-0">
              <img className='w-16 p-1' src={logo} alt="" />
@@ -61,11 +49,8 @@ function Header() {
                  <Link to={'/'} className=' hover:text-amber-700 duration-500 md:mx-2 ' >Contact</Link>
                </div>
                {/* Cart icon */}
-               {/* <button onClick={()=>setIsOpen(!isOpen)} className="inline-flex items-center bg-amber-300 text-slate-700 font-bold border-0 py-1 px-3 md:pr-8 focus:outline-none hover:bg-amber-500 rounded text-base w-20 mt-4 ml-5  md:mt-0"> */}
                <button onClick={()=>setIsOpen(!isOpen)} className="inline-flex items-center bg-amber-300 text-slate-700 font-bold border-0  focus:outline-none hover:bg-amber-500 text-base w-[30px] h-[30px] rounded-full justify-center ml-4">
-                 {/* mr-1 */}
-                 <img className='w-5' src="https://cdn.iconscout.com/icon/free/png-256/free-shopping-cart-1433158-1211836.png" alt="" />
-                 
+                 <img className='w-5' src="https://cdn.iconscout.com/icon/free/png-256/free-shopping-cart-1433158-1211836.png" alt="" />                
                </button>
                <div className='bg-red-500 absolute -right-2 -bottom-2 text-[12px] w-[18px] h-[18px] text-white rounded-full flex justify-center items-center'>
                 {totalNum}
@@ -83,7 +68,6 @@ function Header() {
                <Link to={'/'} className='text-gray-700 hover:text-amber-700 duration-500 my-3' >Blog</Link>
                <Link to={'/'} className='text-gray-700 hover:text-amber-700 duration-500 my-3' >Contact</Link>
    
-               {/* <button className="inline-flex items-center bg-amber-300 text-slate-700 font-bold border-0 py-1 px-3 focus:outline-none hover:bg-amber-500 rounded text-base mt-4 mr-4 md:mt-0 my-6 ms-5" > */}
               {/* cart icon */}
                <button onClick={()=>setIsOpen(!isOpen)} className="inline-flex items-center bg-amber-300 text-slate-700 font-bold border-0  focus:outline-none hover:bg-amber-500 text-base w-[30px] h-[30px] rounded-full justify-center ml-4">
                  <img className='w-5' src="https://cdn.iconscout.com/icon/free/png-256/free-shopping-cart-1433158-1211836.png" alt="" />
@@ -100,9 +84,6 @@ function Header() {
     ):( // Header of Home page
       <header className={`${isActive ? 'bg-slate-600  shadow-md text-gray-50 opacity-95' : 'bg-none py-2 shadow-none text-gray-200 hover:text-white '}  shadow-md mx-auto flex flex-wrap w-full items-center justify-between fixed z-20 transition-all `}>
       {/* cart icon */}
-      {/* <div className='text-xl' onClick={()=>setIsOpen(!isOpen)}>
-      <IoBagHandleOutline />
-      </div> */}
        {/* Logo */}
       <Link to={'/'} className="flex title-font font-medium items-center mb-4 md:mb-0">
         <img className='w-16 p-1' src={logo} alt="" />
@@ -118,7 +99,6 @@ function Header() {
             <Link to={'/'} className=' hover:text-amber-700 duration-500 md:mx-2 ' >Contact</Link>
           </div>
           {/* Cart icon */}
-          {/* <button onClick={()=>setIsOpen(!isOpen)} className="inline-flex items-center bg-amber-300 text-slate-700 font-bold border-0 py-1 px-3 md:pr-8 focus:outline-none hover:bg-amber-500 rounded text-base w-20 mt-4 ml-5  md:mt-0"> */}
           <button onClick={()=>setIsOpen(!isOpen)} className="inline-flex items-center bg-amber-300 text-slate-700 font-bold border-0  focus:outline-none hover:bg-amber-500 text-base w-[30px] h-[30px] rounded-full justify-center ml-4">
             {/* mr-1 */}
             <img className='w-5' src="https://cdn.iconscout.com/icon/free/png-256/free-shopping-cart-1433158-1211836.png" alt="" />
@@ -140,7 +120,6 @@ function Header() {
           <Link to= {'/'} className='text-gray-300 hover:text-amber-700 duration-500 my-3' >Blog</Link>
           <Link to= {'/'} className='text-gray-300 hover:text-amber-700 duration-500 my-3' >Contact</Link>
 
-          {/* <button className="inline-flex items-center bg-amber-300 text-slate-700 font-bold border-0 py-1 px-3 focus:outline-none hover:bg-amber-500 rounded text-base mt-4 mr-4 md:mt-0 my-6 ms-5" > */}
          {/* cart icon */}
           <button onClick={()=>setIsOpen(!isOpen)} className="inline-flex items-center bg-amber-300 text-slate-700 font-bold border-0  focus:outline-none hover:bg-amber-500 text-base w-[30px] h-[30px] rounded-full justify-center ml-4">
             <img className='w-5' src="https://cdn.iconscout.com/icon/free/png-256/free-shopping-cart-1433158-1211836.png" alt="" />
