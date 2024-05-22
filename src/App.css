@@ -1,4 +1,78 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
+}
+
+.women {
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.men {
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 25% 50%, 0 0);
+}
+
+.special {
+    clip-path: polygon(25% 0%, 100% 0, 100% 100%, 25% 100%, 0% 50%);
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .women {
+        height: 40%;
+        width: 100%;
+        clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%);
+    }
+
+    .women a {
+        font-size: 3.5em;
+      
+    }
+
+    .women a:hover{
+        scale: 0.9;
+    }
+
+    .men {
+        top: 30%;
+        left: 0;
+        height: 40%;
+        width: 100%;
+        clip-path: polygon(100% 0, 100% 100%, 50% 75%, 0% 100%, 0 0, 50% 25%);
+        
+    }
+
+    .men a {
+        margin-top: 16%;
+        font-size: 3.5em;
+    }
+
+    .men a:hover{
+        scale: 0.9;
+    }
+
+   
+
+    .special {
+        top: 60%;
+        left: 0;
+        height: 40%;
+        width: 100%;
+        clip-path: polygon(50% 0, 100% 25%, 100% 100%, 0 100%, 0 25%);
+    }
+
+    .special a {
+        /* margin-top: 16%; */
+        font-size: 3.5em;
+    }
+
+    .special a:hover{
+        scale: 0.9;
+    }
+
+
+
 }

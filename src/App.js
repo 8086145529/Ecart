@@ -5,47 +5,33 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 
 import Products from './components/Products';
-
+import Herobanner from './components/Herobanner';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import ProductDetails from './pages/ProductDetails';
+import Sidebar from './components/Sidebar';
 function App() {
 
-  const [products,setProducts] = useState([])
 
-  // Fetching data from fakestore api
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const response = await fetch('https://fakestoreapi.com/products');
-        if (!response.ok) {
-          throw new Error('Failed to fetch products');
-        }
-        const data = await response.json();
-        setProducts(data);
-      } catch (error) {
-        console.error('Error fetching products:', error.message);
-      }
-    };
-  
-    fetchProducts();
-  }, []);
   return (
-   
-      <>
-        <Header/>
-       {
-        products.length>0?
-        <Products products={products}/>
-        :
-        <div>Loading....</div>
-       } 
-        <Footer/>
-        
-        
-      </>
-      
 
-   
-    
+    <>
+      <BrowserRouter>
+        <Header />
+
+        <Routes>
+          <Route path={'/'} element={<Home />} />
+          <Route path={'/product/:id'} element={<ProductDetails />} />
+        </Routes>
+        
+        <Sidebar/>
+        <Footer />
+      </BrowserRouter>
+    </>
+
+
+
+
   );
 }
 
