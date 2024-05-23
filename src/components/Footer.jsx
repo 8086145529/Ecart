@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 function Footer() {
 
-      //  event listener
+      // event listener
   useEffect(()=>{
     window.addEventListener('scroll',()=>{
       window.scrollY > 60 ? setIsScrollBotttom(true) : setIsScrollBotttom(false)
