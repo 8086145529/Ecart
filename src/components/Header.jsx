@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import logo from '../assests/Ecom-logo.png'
 import { SidebarContext } from '../contexts/SidebarContext';
-import { IoBagHandleOutline } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 import { CartContext } from '../contexts/CartContext';
 import { HeaderContext } from '../contexts/HeaderContext';

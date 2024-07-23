@@ -91,7 +91,7 @@ useEffect(()=>{
     setTotalNum(sum)
     
   }
-})
+},[cart])
 
 
  // Total price
@@ -100,7 +100,7 @@ useEffect(()=>{
      return accumulator + cartItem.price * cartItem.amount
   },0)
   setTotalPrice(total)
- })
+ },[cart])
 
 
 

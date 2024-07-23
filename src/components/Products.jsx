@@ -62,7 +62,7 @@ function Products({ products }) {
 
                     {
                         products.filter((product) => {
-                            if (searchTerm == "") {
+                            if (searchTerm === "") {
                                 return product
                             } else {
                                 if (searchType === "name") {
@@ -96,12 +96,12 @@ function Products({ products }) {
                                             </Link>
 
                                     </div>
-                                    <a className="block relative h-48 rounded overflow-hidden">
+                                    <a href= {`/product/${id}`} className="block relative h-48 rounded overflow-hidden">
                                         <img alt={title} className="scale-90 group-hover:scale-100 transition duration-700 object-contain object-center  w-full h-full block" src={image} />
                                     </a>
                                     <div className="mt-4 ">
                                         <h3 className="text-gray-500 text-lg uppercase tracking-widest title-font mb-1">{category}</h3>
-                                        <Link to={'/product/${id}'}><h2 className="text-gray-900 title-font text-lg font-medium">{title}</h2></Link>
+                                        <Link to={`/product/${id}`}><h2 className="text-gray-900 title-font text-lg font-medium">{title}</h2></Link>
                                         <p className="mt-1">${price}</p>
                                     </div>
                                 </div>

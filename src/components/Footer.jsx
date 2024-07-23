@@ -18,16 +18,16 @@ function Footer() {
                         <h2 className="title-font font-medium text-gray-400 tracking-widest text-sm mb-3">RESOURCES</h2>
                         <nav className="list-none mb-10">
                             <li>
-                                <a className="text-white hover:text-gray-400">Application</a>
+                                <a href='/' className="text-white hover:text-gray-400">Application</a>
                             </li>
                             <li>
-                                <a className="text-white hover:text-gray-400">Documentation</a>
+                                <a href='/' className="text-white hover:text-gray-400">Documentation</a>
                             </li>
                             <li>
-                                <a className="text-white hover:text-gray-400">Systems</a>
+                                <a href='/' className="text-white hover:text-gray-400">Systems</a>
                             </li>
                             <li>
-                                <a className="text-white hover:text-gray-400">FAQ</a>
+                                <a href='/' className="text-white hover:text-gray-400">FAQ</a>
                             </li>
                         </nav>
                     </div>
@@ -35,16 +35,16 @@ function Footer() {
                         <h2 className="title-font font-medium text-gray-400 tracking-widest text-sm mb-3">PRICING</h2>
                         <nav className="list-none mb-10">
                             <li>
-                                <a className="text-white hover:text-gray-400">Overview</a>
+                                <a href='/' className="text-white hover:text-gray-400">Overview</a>
                             </li>
                             <li>
-                                <a className="text-white hover:text-gray-400">Premium Plans</a>
+                                <a href='/' className="text-white hover:text-gray-400">Premium Plans</a>
                             </li>
                             <li>
-                                <a className="text-white hover:text-gray-400">Programs</a>
+                                <a href='/' className="text-white hover:text-gray-400">Programs</a>
                             </li>
                             <li>
-                                <a className="text-white hover:text-gray-400">Press</a>
+                                <a href='/' className="text-white hover:text-gray-400">Press</a>
                             </li>
                         </nav>
                     </div>
@@ -52,16 +52,16 @@ function Footer() {
                         <h2 className="title-font font-medium text-gray-400 tracking-widest text-sm mb-3">SOCIAL</h2>
                         <nav className="list-none mb-10">
                             <li>
-                                <a className="text-white hover:text-gray-400">Facebook</a>
+                                <a href='/' className="text-white hover:text-gray-400">Facebook</a>
                             </li>
                             <li>
-                                <a className="text-white hover:text-gray-400">Twitter</a>
+                                <a href='/' className="text-white hover:text-gray-400">Twitter</a>
                             </li>
                             <li>
-                                <a className="text-white hover:text-gray-400">Instagram</a>
+                                <a href='/' className="text-white hover:text-gray-400">Instagram</a>
                             </li>
                             <li>
-                                <a className="text-white hover:text-gray-400">LinkedIn</a>
+                                <a href='/' className="text-white hover:text-gray-400">LinkedIn</a>
                             </li>
                         </nav>
                     </div>
